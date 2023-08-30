@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
 /*
 Colors:
 
@@ -7,7 +9,10 @@ White: #FFF
 
 */
 * {
-    font-family: sans-serif;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    margin: 0;
+    padding: 0;
 }
 
 /* HEADER */
@@ -18,6 +23,8 @@ nav {
     position: fixed;
     display: flex;
     justify-content: space-between;
+    z-index: 10;
+    background-color: #FFF;
 }
 .navbar-img {
     height: 100%;
@@ -38,7 +45,38 @@ nav {
 
 /* MAIN */
 
+main {
+    position: relative;
+    top: 70px;
+}
+
 /* Banner */
 .banner {
-    
+    position:relative; 
+}
+.banner img {
+    width: 100%;
+}
+.banner-text {
+    color: #FFF;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding-bottom: 3rem;
+}
+.banner h1 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+.banner p {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 300;
 }
