@@ -80,3 +80,17 @@ main {
     font-size: 1.2rem;
     font-weight: 300;
 }
+
+/* Description */
+.description-section h2 {
+    text-align: center;
+}
+.description-article {
+    display: flex;
+}
+.description-article div {
+    width: 30%;
+}
+.description-article img {
+    width: 50%;
+}
