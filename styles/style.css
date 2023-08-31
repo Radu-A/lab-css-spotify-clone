@@ -8,9 +8,11 @@ Green: #00B172
 White: #FFF
 
 */
+
 * {
     box-sizing: border-box;
     font-family: 'Roboto';
+    color: #1A1A1A;
     margin: 0;
     padding: 0;
 }
@@ -58,7 +60,6 @@ main {
     width: 100%;
 }
 .banner-text {
-    color: #FFF;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -74,23 +75,120 @@ main {
 .banner h1 {
     font-size: 3rem;
     font-weight: 500;
+    color: #FFF;
 }
 .banner p {
     text-align: center;
     font-size: 1.2rem;
     font-weight: 300;
+    color: #FFF;
 }
 
 /* Description */
+.description-section {
+    padding: 2rem;
+}
+
 .description-section h2 {
     text-align: center;
 }
 .description-article {
+    margin-top: 2rem;
+    padding: 1rem;
+    width: 100%;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .description-article div {
+    min-height: 171px;
     width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
 }
 .description-article img {
+    width: 30%;
+}
+.description-article h3 {
+    text-align: center;
+    color: #00B172;
+    width: 70%;
+}
+.description-article p {
+    text-align: center;
+    width: 60%;
+    font-size: 0.9rem;
+}
+
+/* Appplication */
+
+.application-section {
+    padding: 3.5rem;
+    position: relative;
+    width: 100%;
+    background-color: #00B172;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.spotify-icon-div {
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.spotify-icon-img {
+    width: 10%;
+}
+
+.application-text-article {
+    height: 100%;
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 2rem;
+}
+.application-text-article h2 {
+    color: #FFF;
+    font-weight: 400;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #FFF;
+}
+.application-text-article div {
+    width: 65%;
+}
+.application-text-article h3 {
+    margin-bottom: 2rem;
+    color: #FFF;
+}
+.application-text-article p {
+    color: #FFF;
+}
+.application-image-article {
+    width: 30%;
+}
+.application-image-article img {
+    width: 100%;
+}
+
+@media (min-width: 850px) {
+    .application-text-article h2 {
+        font-size: 2rem;
+    }
+    .application-text-article h3 {
+        font-size: 1.5rem;
+    }
+    .application-text-article p {
+        font-size: 1.4rem;
+    }   
 }
